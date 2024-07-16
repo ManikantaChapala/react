@@ -1,0 +1,205 @@
+<html>
+    <head>
+        <style>
+            body {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .parent {
+                height: 400px;
+                width: 400px;
+                border: 10px double black;
+                box-shadow: 0px 0px 50px black;
+                letter-spacing: -3;
+                border-radius: 50%;
+                position: relative;
+                font-size: 60px;
+            }
+            .c12 {
+                position: absolute;
+                top: 0px;
+                left: 170px;
+            }
+            .c9 {
+                position: absolute;
+                top: 160px;
+                left: 18px;
+            }
+            .c6 {
+                position: absolute;
+                bottom: 0px;
+                left: 175px;
+            }
+            .c3 {
+                position: absolute;
+                top: 160px;
+                right: 18px;
+            }
+            .c1 {
+                position: absolute;
+                top: 20px;
+                right: 90px;
+            }
+            .c2 {
+                position: absolute;
+                top: 80px;
+                right: 39px;
+            }
+            .c4 {
+                position: absolute;
+                bottom: 70px;
+                right: 50px;
+            }
+            .c5 {
+                position: absolute;
+                bottom: 12px;
+                right: 120px;
+            }
+            .c7 {
+                position: absolute;
+                bottom: 20px;
+                left: 90px;
+            }
+            .c8 {
+                position: absolute;
+                bottom: 85px;
+                left: 35px;
+            }
+            .c10 {
+                position: absolute;
+                top: 88px;
+                left: 25px;
+            }
+            .c11 {
+                position: absolute;
+                top: 18px;
+                left: 88px;
+            }
+
+            .dot {
+                position: absolute;
+                top: 180px;
+                left: 187px;
+                width: 25px;
+                height: 25px;
+                border-radius: 50%;
+                background-color: black;
+            }
+
+            .sec {
+                position: absolute;
+                top: 70px;
+                left: 198px;
+                width: 5px;
+                height: 250px;
+                /* background-color: black; */
+                /* animation-name: myAnimation;
+                animation-duration: 60s ; */
+                animation: myAnimation 60s steps(60) infinite ;
+                /* animation-timing-function: linear;
+                animation-iteration-count: infinite; */
+            }
+            .sec-1 {
+                width: 100%;
+                height: 60%;
+                background-color: black;
+            }
+            .sec-2 {
+                width: 100%;
+                height: 40%;
+                background-color: transparent;
+            }
+
+            .min {
+                position: absolute;
+                top: 120px;
+                left: 198px;
+                width: 5px;
+                height: 180px;
+                animation: myAnimation 3600s steps(3600) infinite ;
+                /* animation-name: myAnimation;
+                animation-duration: 3600s;
+                animation-timing-function: linear;
+                animation-iteration-count: infinite; */
+            }
+            .min-1 {
+                width: 100%;
+                height: 60%;
+                background-color: black;
+            }
+            .min-2 {
+                width: 100%;
+                height: 40%;
+                background-color: transparent;
+            }
+
+            .hr {
+                position: absolute;
+                top: 150px;
+                left: 198px;
+                width: 5px;
+                height: 130px;
+                /* background-color: black; */
+                animation: myAnimation 43200s steps(43200) infinite ;
+                /* animation-name: myAnimation;
+                animation-duration: 43200s;
+                animation-timing-function: linear;
+                animation-iteration-count: infinite; */
+            }
+            .hr-1 {
+                width: 100%;
+                height: 60%;
+                background-color: black;
+            }
+            .hr-2 {
+                width: 100%;
+                height: 40%;
+                background-color: transparent;
+            }
+
+
+
+
+            @keyframes myAnimation {
+                0% {
+                    transform: rotate(0deg) translateX(0px);
+                }
+                100% {
+                    transform: rotate(360deg) translateX(0px);
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="parent">
+            <div class="c1">1</div>
+            <div class="c2">2</div>
+            <div class="c3">3</div>
+            <div class="c4">4</div>
+            <div class="c5">5</div>
+            <div class="c6">6</div>
+            <div class="c7">7</div>
+            <div class="c8">8</div>
+            <div class="c9">9</div>
+            <div class="c10">10</div>
+            <div class="c11">11</div>
+            <div class="c12">12</div>
+
+            <div class="dot"></div>
+
+            <div class="sec">
+                <div class="sec-1"></div>
+                <div class="sec-2"></div>
+            </div>
+            <div class="min">
+                <div class="min-1"></div>
+                <div class="min-2"></div>
+            </div>
+            <div class="hr">
+                <div class="hr-1"></div>
+                <div class="hr-2"></div>
+            </div>
+        </div>
+    </body>
+</html>
